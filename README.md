@@ -11,3 +11,14 @@ Steps to run the application:
 3. Open the command prompt at this location in your device
 4. Type the command - 'npm install' (ensure you have npm and node js installed)
 5. Then run the command - ng serve
+
+
+INSTRUCTIONS:
+
+Please enter the input in following format :
+https://github.com/<owner>/<reponme>
+*Kindly note that the reponame should be a plain string without special characters and hyphen, which will be worked as an improvement in the next step.
+  
+ Sample inputs:
+1) https://github.com/kohsuke/winsw
+2) https://github.com/github/linguist
