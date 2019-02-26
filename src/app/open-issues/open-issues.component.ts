@@ -20,7 +20,7 @@ export class OpenIssuesComponent implements OnInit {
 
   ngOnInit() {}
 
-  
+  /*This function takes in the incoming input github public repo link and extracts arguments owner and reponame to send it to backend*/
   getRequestParams() {
     
      var url = this.inputURL.split('/');
@@ -36,13 +36,12 @@ export class OpenIssuesComponent implements OnInit {
   }
 
 
-
+  /*This function makes call to the service class to hit backend, and processes incoming response to display on UI*/
   fetchOpenIssuesCount(userInfo: UserInfo) {
 
     this.issueServiceService.fetchOpenIssuesCount(userInfo).subscribe (
 
       response => {
-              alert(response)
               this.userInfo.issueCount = response;
               this.outputScreen = true;
               this.inputScreen = false;
